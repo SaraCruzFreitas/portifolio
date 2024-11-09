@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Gruesa+Libre&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    padding-top: 60px;
+}
+header{
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position:relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;  /* Isso garante que o header fique acima de outros elementos */
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-right: 20px;
+}
+.nav-item{
+    margin: 0 15px;
+}
+.nav-link{
+    text-decoration: none;
+    font-size: 1.15rem;
+    padding: 10px 15px;
+}
+
+.login-button{
+    padding: 10px 15px;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+.void{
+    height: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: #121212;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    width: 100%;
+    margin: 0; 
+    padding: 0; 
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+/* Define a área principal */
+.container1 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    overflow: hidden; /* Para garantir que as formas não ultrapassem o limite da tela */
+}
+
+
+
+/* Título */
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Parágrafo */
+p {
+    font-size: 1rem;
+   
+    margin-bottom: 30px;
+}
+
+/* Contêiner dos botões */
+.button-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Botões */
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #A0522D;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.parent {
+    display: grid;
+    grid-template-columns: 200px repeat(2, 1fr) 70px;
+    grid-template-rows: 50px repeat(2, 1fr) 50px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { grid-area: 2 / 2 / 4 / 3; }
+    .div2 { grid-area: 2 / 3 / 4 / 4; }
+    .div3 { grid-area: 2 / 1 / 4 / 2; }
+    .image-container {
+        position: relative;
+        width: 300px; /* Aumenta a largura do contêiner */
+        height: 450px; /* Aumenta a altura do contêiner */
+        padding: 20px; /* Aumenta o padding ao redor da imagem */
+        border-radius: 150px 150px 0 0; /* Arredonda apenas as bordas superiores */
+        padding: 20px; 
+        overflow: hidden;
+        background-color: #f3d1d1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Estilo da imagem */
+    .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 200px 200px 0 0; /* Ajuste para combinar com o contêiner maior */
+    }
+
+.liltext{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+.title{
+    font-size: 50px;
+}
+
+
+    .title2{
+        font-size: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #a {
+        
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+        
+        color: #000;
+     }
+
+     .container2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+     }
+
+     nav {
+        position: relative;
+        display: flex;
+     }
+
+     nav a {
+        position: relative;
+        margin: 0 20px;
+        font-size: 1.5em;
+        color: #000;
+        text-decoration: none;
+
+        cursor: pointer;
+     }
+
+     nav #marker {
+        position: absolute;
+        height: 4px;
+        left: 0;
+        width: 0;
+        background: rgb(198,86,12);
+        background: linear-gradient(90deg, rgba(198,86,12,1) 0%, rgba(245,20,61,1) 100%);
+        bottom: -5px;
+        transition: 0.5s;
+        border-radius: 4px;
+     }
+
+     /* Estilos das seções */
+     #content {
+        margin-top: 20px;
+        text-align: center;
+        width: 80%;
+     }
+
+     .section-content {
+        display: none;
+        padding: 20px;
+        border-radius: 8px;
+        background-color: rgba(255, 255, 255, 0.1);
+        font-size: 1.2em;
+     }
+
+     /* Exibir seção ativa */
+     .active {
+        display: block;
+     }
+     .portfolio-section {
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .portfolio-grid {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .card {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 250px;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .card-image {
+        width: 100%;
+        border-radius: 8px;
+    }
+    .portfolio-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        max-width: 1200px; /* Ajuste conforme o necessário */
+        padding: 20px;
+      }
+      .image-container2 {
+        position: relative;
+        width: 300px; /* Aumenta a largura do contêiner */
+        height: 450px; /* Aumenta a altura do contêiner */
+        padding: 20px; /* Aumenta o padding ao redor da imagem */
+        border-radius: 150px 150px 0 0; /* Arredonda apenas as bordas superiores */
+        padding: 20px; 
+        overflow: hidden;
+        background-color: #f3d1d1;
+        display: flex;
+        align-items: end;
+        justify-content: right;
+    }
+    
+    /* Estilo da imagem */
+    .image-container2 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 200px 200px 0 0; /* Ajuste para combinar com o contêiner maior */
+    }
+
+
+    .parent13 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 50px repeat(2, 1fr);
+        grid-template-rows: 50px 70px repeat(2, 1fr) 50px;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        
+        }
+        
+        .div8 { grid-area:2 / 2 / 3 / 5;
+            text-align: center;}
+        .div9 { grid-area: 3 / 2 / 5 / 3;  }
+        .div10 { grid-area:  3 / 4 / 5 / 5;}
+
+        .parent-resumo {
+            display: grid;
+            grid-template-columns: 50px 1fr 30px 1fr 50px;
+            grid-template-rows: 70px repeat(2, 50px) 1fr 30px 1fr;
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
+
+        .rdiv1 {
+            grid-area: 1 / 1 / 2 / 6;
+            text-align: center;
+            
+        }
+
+       .rdiv4, .rdiv5, .rdiv6, .rdiv7 {
+            background-color: #EDCEBA;
+            padding: 20px;
+            font-size: 0.9em;
+            
+        }
+
+        .rdiv2 { grid-area: 3 / 2 / 4 / 3; }
+        .rdiv3 { grid-area: 3 / 4 / 4 / 5; }
+        .rdiv4 { grid-area: 4 / 2 / 5 / 3; }
+        .rdiv5 { grid-area: 4 / 4 / 5 / 5; }
+        .rdiv6 { grid-area: 6 / 2 / 7 / 3; }
+        .rdiv7 { grid-area: 6 / 4 / 7 / 5; }
+        .parent-contato {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: 50px 70px repeat(3, 1fr) 50px;
+            gap: 0px;
+            width: 100%;
+            max-width: 1000px;
+            margin: auto; 
+          }
+          
+          .cdiv1 {
+            grid-area: 2 / 1 / 3 / 6;
+            text-align: center;
+            font-size: 1.2em;
+          }
+          
+          .cdiv2 {
+            grid-area: 3 / 2 / 6 / 5;
+          }
+          
+          form {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+          }
+          
+          input, textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #d3a18c;
+            border-radius: 0;
+            background-color: #d3a18c;
+            color: #ffffff;
+            outline: none;
+          }
+          
+          textarea {
+            resize: none;
+          }
+          
+         
+       
